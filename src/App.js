@@ -1,23 +1,22 @@
-import logo from './logo.svg';
 import './App.css';
+import Logo from './Logo';
+import Body from './Body';
+import cores from './img/fundo_cores.png';
 
 function App() {
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+        <img id="b_cores" src={cores}></img>
+        <Logo/>
+        <ul>
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Localização</a></li>
+        </ul>
+
       </header>
+
+      <Body/>
     </div>
   );
 }

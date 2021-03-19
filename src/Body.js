@@ -1,5 +1,7 @@
 import cartao from "./img/cartao.png";
 import boxcliente from "./img/box_cliente.jpg";
+import conforto from "./img/box_conforto.jpg";
+import seguranca from "./img/box_seguranca.jpg";
 
 function Body(){
     return(
@@ -10,12 +12,13 @@ function Body(){
             </div>
             <div className="grid-item" id="rightside">
                 <div id="boxcliente">
-                    <img src={boxcliente}></img>
+                    <img src={boxcliente} alt="Área de cliente"></img>
                     <p>Realize a recarga do seu BetimCard, acessando um dos links abaixo, conforme o seu perfil.</p>
                 </div>
             </div>
             <div id="downside">
                 <div className="boxcontent" id="boxcontent1">
+                    <img id="imagemconforto" src={conforto} alt="Mais conforto"></img>
                     <p>- Embarque mais rápido, sem filas.
                         - Você não precisa mais carregar moedinhas e papeis.
                         - Troco não é mais problema.
@@ -25,6 +28,7 @@ function Body(){
                 </div>
 
                 <div className="boxcontent" id="boxcontent2">
+                    <img id="imagemseguranca" src={seguranca} alt="Mais segurança"></img>
                     <p>O cartão é recarregavel. 
                         Pode durar até cinco anos.
                         Com menos dinheiro circulando, os assaltos vão diminuir.

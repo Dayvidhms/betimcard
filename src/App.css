@@ -31,11 +31,31 @@ ul{
   padding-left: 2rem;
 }
 
+#rightside{
+  grid-area: rightside-item;
+}
+
+#leftside{
+  grid-area: leftside-item;
+}
+
+#downside{
+  display: inline-block;
+  grid-area: downside;
+  margin: 2rem auto 0rem auto;
+}
+
 #main{
   display: grid;
   grid-template-columns: 50% 50%;
+  grid-template-areas: "leftside-item rightside-item"
+                      "downside downside";
   margin-top: 2rem;
   margin-left: 2rem;
+}
+
+#imagemcartao{
+  margin: 0 auto;
 }
 
 .grid-item{
@@ -47,5 +67,10 @@ ul{
   display: block;
   width: 13.8rem;
   font-size: .9rem;
+  text-align: justify;
+}
+
+.boxcontent{
+  width: 20rem;
   text-align: justify;
 }
